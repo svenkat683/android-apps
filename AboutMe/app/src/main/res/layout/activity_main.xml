@@ -13,6 +13,33 @@
         android:text="@string/name"
         android:textAlignment="center" />
 
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/done_button_text" />
+
+    <TextView
+        android:id="@+id/nickname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        style="@style/NameStyle"
+        android:visibility="gone"/>
+
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="match_parent"
@@ -29,8 +56,8 @@
             style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/padding"
             android:lineSpacingMultiplier="1.2"
+            android:padding="@dimen/padding"
             android:text="@string/bio" />
     </ScrollView>
 

@@ -14,4 +14,6 @@
         Lorem Ipsum passages, and more recently with desktop publishing software\n
         like Aldus PageMaker including versions of Lorem Ipsum.
     </string>
+    <string name="what_is_your_nickname">What is your nickname?</string>
+    <string name="done_button_text">Done</string>
 </resources>
