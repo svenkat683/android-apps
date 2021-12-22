@@ -27,12 +27,12 @@ import com.example.android.navigation.databinding.FragmentGameOverBinding
 
 class GameOverFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+                              savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
         val binding: FragmentGameOverBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_game_over, container, false)
         binding.tryAgainButton.setOnClickListener {view: View ->
-            view.findNavController().navigate(R.id.action_gameOverFragment2_to_gameFragment2)
+            view.findNavController().navigate(GameOverFragmentDirections.actionGameOverFragment2ToGameFragment2())
         }
         return binding.root
     }
